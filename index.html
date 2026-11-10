@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converrter</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="favicon" href="./assets/unitConverter.jpg">
+</head>
+<body>
+    <h1>Unit Converter</h1>
+    <nav>
+        <ul>
+            <li><a href="#length">Length</a></li>
+            <li><a href="#weight">Weight</a></li>
+            <li><a href="#temperature">Temperature</a></li>
+            <li><a href="#volume">Volume</a></li>
+            <li><a href="#area">Area</a></li>
+            <li><a href="#speed">Speed</a></li>
+            <li><a href="#force">Force</a></li>
+        </ul>
+    </nav>
+    <section id = "length">
+        <div class = "card">
+            <div class = "card-header">
+                <h2>Length Converter</h2>
+            </div>
+            <input type="number" id="lengthInput" placeholder="Enter length">
+            <select id="lengthUnit">
+                <option value="">Select a value</option>
+
+                <!-- Centimeters -->
+                <option value="cm to m">Centimeters to Meters</option>
+                <option value="cm to km">Centimeters to Kilometers</option>
+                <option value="cm to mi">Centimeters to Miles</option>
+                <option value="cm to in">Centimeters to Inches</option>
+                <option value="cm to ft">Centimeters to Feet</option>
+    
+                <!-- Meters -->
+                <option value="m to cm">Meters to Centimeters</option>
+                <option value="m to km">Meters to Kilometers</option>
+                <option value="m to ft">Meters to Feet</option>
+    
+                <!-- Kilometers -->
+                <option value="km to cm">Kilometers to Centimeters</option>
+                <option value="km to m">Kilometers to Meters</option>
+                <option value="km to mi">Kilometers to Miles</option>
+    
+                <!-- Miles -->
+                <option value="mi to km">Miles to Kilometers</option>
+                <option value="mi to cm">Miles to Centimeters</option>
+    
+                <!-- Inches & Feet -->
+                <option value="in to cm">Inches to Centimeters</option>
+                <option value="ft to cm">Feet to Centimeters</option>
+                <option value="ft to m">Feet to Meters</option>
+            </select>
+            <button type="submit" id="lengthSubmit">Convert</button>
+            <div id = "lengthResult" class = "result-container"></div>
+        </div>
+    </section>
+    <section id = "weight">
+        <div class = "card">
+            <div class = "card-header">
+                <h2>Weight Converter</h2>
+            </div>
+            <input type="number" id="weightSubmit" placeholder="Enter weight..."/>
+            <select id="weightUnit">
+                <option>Select a value</option>
+                <option value="grammstokilogram">Grams to Kilogram</option>
+                <option value="gramstoTonnes">Grams to Tonnes</option>
+                <option value="kilogramtoGram">Kilograms to Grams</option>
+                <option value="kilogramtoTonnes">Kilograms to Tonnes</option>
+                <option value="tonnestoKilograms">Tonnes to Kilogram</option>
+                <option value="tonnestoGrams">Tonnes to Grams</option>
+            </select>
+            <button type="submit" id="weightSubmit">Convert</button>
+            <div id = "weightResult" class = "result-container"></div>
+        </div>
+    </section>
+    <section id = "temperature"></section>
+    <section id = "volume"></section>
+    <section id = "area"></section>
+    <section id = "speed"></section>
+    <section id = "force"></section>
+    <script type="module" src="./javascript/script.js"></script> 
+</body>
+</html>

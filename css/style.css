@@ -1,0 +1,61 @@
+body{
+    background-color: antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card{
+    width: 500px;
+    background-color: aliceblue;
+    border: 1px solid rgb(107, 103, 103);
+    border-radius: 5px;
+    margin: 0 auto 20px auto;
+    padding-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-container{
+    width: 80%;
+    background-color: rgb(240, 258, 255);
+    color: azure;
+    padding: 5px;
+    border: 1px solid rgb(107, 103, 103);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card-header{
+    background-color: rgb(140, 198, 250);
+    color:azure;
+    width: 100%;
+    padding: 2px 0;
+    margin-bottom: 10px;
+}
+
+.card input, .card select{
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button{
+    background-color: rgb(93, 182, 142);
+    color: azure;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover{
+    background-color: rgb(107, 103, 103);
+}
+
+button:active{
+    background-color: rgb(140, 198, 250);
+}
