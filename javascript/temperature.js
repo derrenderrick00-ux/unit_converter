@@ -12,9 +12,7 @@ export function convertTemperature(unit, value) {
             return (value) => (value - 32) * 5/9 + 273.15;
         case 'K to F':
             return (value) => (value - 273.15) * 9/5 + 32;
-        case 'F to K':
-            return (value) => (value - 32) * 5/9 + 273.15;
         default:
             throw new Error('Invalid temperature conversion unit');
     }
-}
+};

@@ -25,6 +25,6 @@ export function convertWeight(unit, value) {
         case "t to lb":
             return value / 0.000453592;
         default:
-            return 0;
+            throw new Error("Invalid weight unit");
     }
-}
+};

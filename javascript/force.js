@@ -15,4 +15,4 @@ export function convertForce(unit, value) {
         default:
             throw new Error('Invalid force conversion unit');
     }
-}
+};

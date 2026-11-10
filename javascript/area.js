@@ -15,4 +15,4 @@ export function convertArea(unit, value) {
         default:
             throw new Error("Invalid area unit");
     }
-}
+};
