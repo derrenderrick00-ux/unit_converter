@@ -1,4 +1,4 @@
-export function lengthConvert(userInput, value) {
+export function convertLength(userInput, value) {
     switch (userInput) {
         // Centimeter conversions
         case "cm to ft":

@@ -64,25 +64,121 @@
             <div class = "card-header">
                 <h2>Weight Converter</h2>
             </div>
-            <input type="number" id="weightSubmit" placeholder="Enter weight..."/>
+            <input type="number" id="weightInput" placeholder="Enter weight..."/>
             <select id="weightUnit">
                 <option>Select a value</option>
-                <option value="grammstokilogram">Grams to Kilogram</option>
-                <option value="gramstoTonnes">Grams to Tonnes</option>
-                <option value="kilogramtoGram">Kilograms to Grams</option>
-                <option value="kilogramtoTonnes">Kilograms to Tonnes</option>
-                <option value="tonnestoKilograms">Tonnes to Kilogram</option>
-                <option value="tonnestoGrams">Tonnes to Grams</option>
+                <option value="g to Kg">Grams to Kilogram</option>
+                <option value="g to t">Grams to Tonnes</option>
+                <option value="g to lb">Grams to Pounds</option>
+                <option value="Kg to g">Kilograms to Grams</option>
+                <option value="Kg to t">Kilograms to Tonnes</option>
+                <option value="Kg to lb">Kilograms to Pounds</option>
+                <option value="t to Kg">Tonnes to Kilogram</option>
+                <option value="t to g">Tonnes to Grams</option>
+                <option value="t to lb">Tonnes to Pounds</option>
+                <option value="lb to Kg">Pounds to Kilograms</option>
+                <option value="lb to g">Pounds to Grams</option>
+                <option value="lb to t">Pounds to Tonnes</option>
             </select>
             <button type="submit" id="weightSubmit">Convert</button>
             <div id = "weightResult" class = "result-container"></div>
         </div>
     </section>
-    <section id = "temperature"></section>
-    <section id = "volume"></section>
-    <section id = "area"></section>
-    <section id = "speed"></section>
-    <section id = "force"></section>
+    <section id = "temperature">
+        <div class = "card">
+            <div class = "card-header">
+                <h2>Temperature Converter</h2>
+            </div>
+            <input type="number" id="temperatureInput" placeholder="Enter temperature..."/>
+            <select id="temperatureUnit">
+                <option>Select a value</option>
+                <option value="C to F">Celsius to Fahrenheit</option>
+                <option value="C to K">Celsius to Kelvin</option>
+                <option value="F to C">Fahrenheit to Celsius</option>
+                <option value="F to K">Fahrenheit to Kelvin</option>
+                <option value="K to C">Kelvin to Celsius</option>
+                <option value="K to F">Kelvin to Fahrenheit</option>
+            </select>
+            <button type="submit" id="temperatureSubmit">Convert</button>
+            <div id = "temperatureResult" class = "result-container"></div>
+        </div>
+    </section>
+    <section id = "volume">
+        <div class = "card">
+            <div class = "card-header">
+                <h2>Volume Converter</h2>
+            </div>
+            <input type="number" id="volumeInput" placeholder="Enter volume..."/>
+            <select id="volumeUnit">
+                <option>Select a value</option>
+                <option value="L to mL">Liters to Milliliters</option>
+                <option value="L to gal">Liters to Gallons</option>
+                <option value="mL to L">Milliliters to Liters</option>
+                <option value="mL to gal">Milliliters to Gallons</option>
+                <option value="gal to L">Gallons to Liters</option>
+                <option value="gal to mL">Gallons to Milliliters</option>
+            </select>
+            <button type="submit" id="volumeSubmit">Convert</button>
+            <div id = "volumeResult" class = "result-container"></div>
+        </div>
+    </section>
+    <section id = "area">
+        <div class = "card">
+            <div class = "card-header">
+                <h2>Area Converter</h2>
+            </div>
+            <input type="number" id="areaInput" placeholder="Enter area..."/>
+            <select id="areaUnit">
+                <option>Select a value</option>
+                <option value="m² to ft²">Square Meters to Square Feet</option>
+                <option value="m² to yd²">Square Meters to Square Yards</option>
+                <option value="ft² to m²">Square Feet to Square Meters</option>
+                <option value="ft² to yd²">Square Feet to Square Yards</option>
+                <option value="yd² to m²">Square Yards to Square Meters</option>
+                <option value="yd² to ft²">Square Yards to Square Feet</option>
+            </select>
+            <button type="submit" id="areaSubmit">Convert</button>
+            <div id = "areaResult" class = "result-container"></div>
+        </div>
+    </section>
+    <section id = "speed">
+        <div class="card"> 
+            <div class="card-header">
+                <h2>Speed Converter</h2>
+            </div>
+            <input type="number" id="speedInput" placeholder="Enter speed..."/>
+            <select id="speedUnit">
+                <option>Select a value</option>
+                <option value="m/s to km/h">Meters per second to Kilometers per hour</option>
+                <option value="m/s to mph">Meters per second to Miles per hour</option>
+                <option value="km/h to m/s">Kilometers per hour to Meters per second</option>
+                <option value="km/h to mph">Kilometers per hour to Miles per hour</option>
+                <option value="mph to m/s">Miles per hour to Meters per second</option>
+                <option value="mph to km/h">Miles per hour to Kilometers per hour</option>
+            </select>
+            <button type="submit" id="speedSubmit">Convert</button>
+            <div id = "speedResult" class = "result-container"></div>   
+        </div>
+    </section>
+    <section id = "force">
+        <div class="card"> 
+            <div class="card-header">
+                <h2>Force Converter</h2>
+            </div>
+            <input type="number" id="forceInput" placeholder="Enter force..."/>
+            <select id="forceUnit">
+                <option>Select a value</option>
+                <option value="N to lbf">Newtons to Pounds-force</option>
+                <option value="N to kgf">Newtons to Kilogram-force</option>
+                <option value="lbf to N">Pounds-force to Newtons</option>
+                <option value="lbf to kgf">Pounds-force to Kilogram-force</option>
+                <option value="kgf to N">Kilogram-force to Newtons</option>
+                <option value="kgf to lbf">Kilogram-force to Pounds-force</option>
+            </select>
+            <button type="submit" id="forceSubmit">Convert</button>
+            <div id = "forceResult" class = "result-container"></div>   
+        </div>
+    </section>
     <script type="module" src="./javascript/script.js"></script> 
 </body>
 </html>
