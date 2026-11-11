@@ -1,12 +1,22 @@
 body{
-    background-color: antiquewhite;
+    background-color: #01a4cd;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: auto;
+    margin: 0;
 }
 
+h1{
+    text-align: center;
+}
+
+input{
+    border: 1px solid #2debec;
+    border-radius: 4px;
+}
 .card{
     width: 500px;
-    background-color: aliceblue;
-    border: 1px solid rgb(107, 103, 103);
+    background-color: #ffffff;
+    border: 1px solid #f7fafd;
     border-radius: 5px;
     margin: 0 auto 20px auto;
     padding-bottom: 20px;
@@ -18,8 +28,8 @@ body{
 
 .result-container{
     width: 80%;
-    background-color: rgb(240, 248, 255);
-    color: azure;
+    background-color: #f5f7f2;
+    color: #2c2a25;
     padding: 5px;
     border: 1px solid rgb(107, 103, 103);
     border-radius: 5px;
@@ -27,8 +37,8 @@ body{
 }
 
 .card-header{
-    background-color: rgb(140, 198, 250);
-    color:azure;
+    color: #333333;
+    text-align: center;
     width: 100%;
     padding: 2px 0;
     margin-bottom: 10px;
@@ -36,6 +46,7 @@ body{
 
 .card input, .card select{
     width: 80%;
+    box-sizing: border-box;
     padding: 8px;
     margin-bottom: 12px;
     border: 1px solid #ccc;
@@ -43,8 +54,8 @@ body{
 }
 
 button{
-    background-color: rgb(93, 182, 142);
-    color: azure;
+    background-color: #68f5f5;
+    color: #111111;
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
@@ -53,9 +64,56 @@ button{
 }
 
 button:hover{
-    background-color: rgb(107, 103, 103);
+    background-color: #01ffff;
+    color: azure;
 }
 
 button:active{
     background-color: rgb(140, 198, 250);
+}
+
+
+#navBar ul{
+    display: flex;
+    gap: 1em;
+    list-style: none;
+    padding: 10px 20px;
+    margin: 0;
+    position: fixed;
+    top:0;
+    background-color: transparent;
+    /*overflow: hidden;*/
+}
+
+#navBar a{
+   text-decoration: none; 
+   padding:14px 16px;
+   border-radius: 4px;
+   background-color: #333333;
+   border-radius: 4px;
+   font-style: italic;
+   color:azure;
+}
+
+#navBar a:hover{
+    background-color: #555353;
+    color: #111111;
+}
+
+#navBar a:active{
+    background-color: hwb(240 15% 85%);
+    color: azure;
+}
+
+#navBar{
+    position: sticky; 
+    background-color: #333333;  
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+}
+
+/*#length, #weight, #temperature, #area, #volume, #speed, #time, #force{
+    margin-top: 50px;
+    display: none;
 }
