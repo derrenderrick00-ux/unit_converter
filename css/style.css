@@ -112,8 +112,3 @@ button:active{
     top: 0;
     width: 100%;
 }
-
-/*#length, #weight, #temperature, #area, #volume, #speed, #time, #force{
-    margin-top: 50px;
-    display: none;
-}
